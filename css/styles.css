@@ -341,16 +341,45 @@ font-family: 'Roboto';
     letter-spacing: 0.03em;
     margin-bottom: 30px;
 }
-.icons-team-div{
- 
+
+.box-team{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    display: block;
 }
 
-.icons-team-ul{
+.ul-icons-team{
 display: flex;
-    justify-content: center;}
-    .icons-team-li{
-margin-right: 20px;
+    justify-content: center;
+   margin-right: 20px;
+   
 }
+
+.li-icons-team :not(:last-child) {
+margin-right: 10px;
+}
+
+
+.li-icons-team :hover,
+.li-icons-team :focus {
+    background-color: var(--brand-color);
+    fill: #FFFFFF;
+}
+
+.icons-team{
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: var(--accent-color);
+    }
+
+  
+
+   
 
 
 
