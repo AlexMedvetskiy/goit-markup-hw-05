@@ -209,7 +209,7 @@ p {
          padding-right: 32px;
          padding-left: 32px;
         }
-        .to-hide {
+        .mission-to-hide {
                     position: absolute;
                     width: 1px;
                     height: 1px;
@@ -227,20 +227,39 @@ p {
     padding: 94px 94px;
 }
 
-.mission{
+/* .mission{
     font-family: 'Roboto';
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
         color: var(--header-color);
-}
+} */
 .mission-list {
         flex-basis: 50%;}
 
         .mission-list:not(:last-child) {
     margin-right: 30px;
 }
+
+.mission-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    fill: var(--accent-color);
+    background-color:  #F5F4FA;
+}
+
+.svg-mission {
+    fill: var(--accent-color);
+}
+
+
+
+
 
 .mission-heading{
     font-family: 'Roboto';
