@@ -588,7 +588,7 @@ display: flex;
 .list-footer :hover,
 .list-footer :focus {
     color: var(--brand-color);
-}
+   }
 
 
 
@@ -597,6 +597,12 @@ display: flex;
 
 
 /* portfolio.html */
+
+.section-filter-portfolio {
+margin-top: 94px;
+margin-bottom: 94px;
+}
+
 .portfolio-color {
    color: var(--brand-color);
 }
@@ -648,7 +654,7 @@ font-family: 'Roboto';
         cursor: pointer;
         display: flex;
         justify-content: center;
-        margin-top: 94px;
+        
      
         
   }
@@ -661,34 +667,50 @@ font-family: 'Roboto';
     text-indent: inherit;
     padding: 6px 22px;
     margin-bottom: 50px;
+    font-size: 16px;
+line-height: 26px;
+letter-spacing: 0.03em;
        }
     
-
   .button-filters:hover{
     color: var(--text-background);
     background-color: var(--brand-color);
     border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
   }
 .button-filters:focus{
     color: var(--text-background);
     background-color: var(--brand-color);
     border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 
 .project {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    text-decoration: none;
+}
+.a-project {
+    display: inline-block;
+  text-decoration: none;
+}
+
+.a-project :hover,
+.a-project :focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
   .work-project{
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
-  margin-top: 0;
-    
-         }
+  padding: 24px 20px;
+           }
 
 
   .project-heading{
@@ -698,7 +720,7 @@ font-family: 'Roboto';
         line-height: 2;
         color: var(--header-color);
         letter-spacing: 0.06em;
-        margin: 4px;
+       
   }
   .img-project {
     margin-bottom: 0;
@@ -710,7 +732,7 @@ font-family: 'Roboto';
         line-height: 1.88;
         color: var(--accent-color);
         letter-spacing: 0.03em;
-        margin-bottom: 20px;
+        
   }
 
   
