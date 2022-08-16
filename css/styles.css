@@ -14,7 +14,7 @@
     /* others */
 
     /* animation */
---timing-function: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+--timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
 font-family: var(--main-fonts) "Roboto", "Raleway", sans-serif;
@@ -328,7 +328,21 @@ p {
     margin: 30px;
     margin-left: auto;
 }
-
+/* НЕ ПРАЦЮЄ 170822 */
+.section-about > .label-img-about {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 8px 16px;
+    border-bottom-left-radius: 4px;
+    weight: 700px;
+  
+    font-family: sans-serif;
+    font-size: 24px;
+    background-color: #2196f3;
+    color: #fff;
+  }
 
 
 
@@ -388,32 +402,19 @@ font-family: 'Roboto';
     padding-bottom: 30px;
     text-align: center;
     display: block;
+   
 }
 
 .ul-icons-team{
 display: flex;
     justify-content: center;
-  }
-
+     }
+     
+     
+   
 .icons-team  {
 margin-right: 10px;
 }
-
-.icons-team {
-    transition: border-color var(--timing-function);
-}
-
-.icons-team:hover {
-    background-color: var(--brand-color);
-    fill: #FFFFFF; 
-}
-
-/* .li-icons-team :hover,
-.li-icons-team :focus {
-    background-color: var(--brand-color);
-    fill: #FFFFFF;
-} */
-
 
 .icons-team{
     display: flex;
@@ -423,9 +424,23 @@ margin-right: 10px;
     align-items: center;
     justify-content: center;
     fill: #AFB1B8;
-    transition: border-color var(--timing-function);
-    }
+   background-color: #FFFFFF;
+   transition: background-color var(--timing-function), fill var(--timing-function);
+   
+        }
 
+
+/* чомусь svg вибиває transition, тобто коли на svg навести курсор
+ вона спрацьовує без переходу */
+        .li-icons-team :hover,
+        .li-icons-team :focus {
+            fill: #FFFFFF;
+            background-color: var(--brand-color);
+        }
+
+        
+
+       
     
    /* section-permanent-clients */
 
@@ -452,11 +467,6 @@ padding-bottom: 94px;
     justify-content: center;
   
 }
-
-/* .li-permanent-clients {
-   
-} */
-
 
 
 .li-permanent-clients:not(:last-child)  {
