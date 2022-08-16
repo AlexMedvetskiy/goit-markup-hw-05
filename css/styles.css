@@ -12,6 +12,9 @@
     /* bg-color */
 
     /* others */
+
+    /* animation */
+--timing-function: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
 font-family: var(--main-fonts) "Roboto", "Raleway", sans-serif;
@@ -86,6 +89,7 @@ p {
     color:var(--brand-color);
     }
 
+
 .header-logo{
     text-decoration: none;
     font-family: 'Raleway';
@@ -135,7 +139,13 @@ p {
 }
 .header-list {
     list-style: none;
+    transition: color var(--timing-function);
     }
+
+    .header-list:hover,
+.header-list:focus{
+    color: var(--brand-color);
+}
 
 .list {
     display: flex;
@@ -156,6 +166,7 @@ p {
         display: flex;
         align-items: center;
         fill: currentColor;
+        transition: color var(--timing-function);
   }
 
   .header-contact:hover,
@@ -170,10 +181,7 @@ p {
   }
 
 
-.header-list:hover,
-.header-list:focus{
-    color: var(--brand-color);
-}
+
 
 
 
@@ -391,12 +399,20 @@ display: flex;
 margin-right: 10px;
 }
 
+.icons-team {
+    transition: border-color var(--timing-function);
+}
 
-.li-icons-team :hover,
+.icons-team:hover {
+    background-color: var(--brand-color);
+    fill: #FFFFFF; 
+}
+
+/* .li-icons-team :hover,
 .li-icons-team :focus {
     background-color: var(--brand-color);
     fill: #FFFFFF;
-}
+} */
 
 
 .icons-team{
@@ -407,6 +423,7 @@ margin-right: 10px;
     align-items: center;
     justify-content: center;
     fill: #AFB1B8;
+    transition: border-color var(--timing-function);
     }
 
     
@@ -458,22 +475,26 @@ margin-right: 30px;
    border: 1px solid #AFB1B8;
  width: 170px;
 height: 92px;
-  
+transition: border-color var(--timing-function);
+
      }
 
    .a-permanent-clients:hover,
    .a-permanent-clients:focus {
     border-color: var(--brand-color);
+    
    }
 
    .svg-permanent-clients {
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
+    transition: fill var(--timing-function);
        }
        .svg-permanent-clients:hover,
        .svg-permanent-clients:focus {
         fill: var(--brand-color);
+
        }
 
 
@@ -528,6 +549,7 @@ display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--timing-function);
 }
 
 .a-icons-footer:hover,
@@ -573,12 +595,17 @@ display: flex;
    }
 .list-address-footer:not(:last-child) {
     margin-bottom: 9px;
+    transition: color var(--timing-function);
+   }
+   .p-list-contact {
+    transition: color var(--timing-function);
    }
 
 .footer-contact{
     text-decoration: none;
     font-family: 'Roboto';
     color: rgba(255, 255, 255, 0.6);
+    transition: color var(--timing-function);
 }
 .footer-contact{
     list-style: none;
@@ -588,9 +615,13 @@ display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    transition: color var(--timing-function);
 }
-.list-footer :hover,
-.list-footer :focus {
+.list-footer .footer-contact:hover,
+.list-footer .footer-contact:focus {
+    color: var(--brand-color);
+   }
+   .p-list-contact:hover {
     color: var(--brand-color);
    }
    
@@ -606,6 +637,9 @@ display: flex;
 ---------------------------------------------------------
 -----------------------------------------------------------
 -------------------------------------------------------- */
+.portfolio-color {
+    color:var(--brand-color);
+    }
 
 .section-filter-portfolio {
 margin-top: 94px;
@@ -675,6 +709,7 @@ font-family: 'Roboto';
     font-size: 16px;
 line-height: 26px;
 letter-spacing: 0.03em;
+transition: color var(--timing-function), background-color var(--timing-function),  box-shadow var(--timing-function) ;
        }
     
   .button-filters:hover{
@@ -702,6 +737,7 @@ letter-spacing: 0.03em;
 .a-project {
     display: inline-block;
   text-decoration: none;
+  transition: box-shadow var(--timing-function) ;
 }
 
 .a-project:hover,
@@ -739,6 +775,20 @@ letter-spacing: 0.03em;
         letter-spacing: 0.03em;
         
   }
+
+  /* @keyframes transition {
+    0% {
+      background-color: teal;
+    }
+  
+    50% {
+      background-color: orange;
+    }
+  
+    100% {
+      background-color: deepskyblue;
+    }
+  } */
 
   
 
